@@ -96,10 +96,24 @@ $(function(){
             onTranslated : counter //When the translation of the stage has finished.
         });
 
-        $('.testimonial-nav .next').on('click', function() {
+        $('.testimonial-nav-nz .next').on('click', function() {
             testimonial.trigger('next.owl.carousel');
         })
-        $('.testimonial-nav .prev').on('click', function() {
+        $('.testimonial-nav-nz .prev').on('click', function() {
+            testimonial.trigger('prev.owl.carousel', [300]);
+        })
+
+        $('.testimonial-nav-swiss .next').on('click', function() {
+            testimonial.trigger('next.owl.carousel');
+        })
+        $('.testimonial-nav-swiss .prev').on('click', function() {
+            testimonial.trigger('prev.owl.carousel', [300]);
+        })
+
+        $('.testimonial-nav-vn .next').on('click', function() {
+            testimonial.trigger('next.owl.carousel');
+        })
+        $('.testimonial-nav-vn .prev').on('click', function() {
             testimonial.trigger('prev.owl.carousel', [300]);
         })
 
@@ -114,6 +128,8 @@ $(function(){
                 item = item - items
         }
         $('#testimonial-slide-count').html("<span class='left'>"+item+"</span> / "+items)
+        $('#testimonial-slide-count-swiss').html("<span class='left'>"+item+"</span> / "+items)
+        $('#testimonial-slide-count-vn').html("<span class='left'>"+item+"</span> / "+items)
         }
     }
 

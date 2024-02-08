@@ -438,6 +438,9 @@
     <link rel="alternate" type="text/xml+oembed"
         href="wp-json/oembed/1.0/embed828c?url=https%3A%2F%2Fwpriverthemes.com%2Fdrake%2F&amp;format=xml" />
     <meta name="generator" content="Redux 4.4.0" />
+
+    <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+
     <meta name="generator"
         content="Elementor 3.12.1; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
     <style id="wp-custom-css">
@@ -449,7 +452,23 @@
             animation: rotating 3s infinite linear;
         }
     </style>
+    <style>
+        #theclock {
+            width: 50%;
+        }
 
+        @media only screen and (max-width: 600px) {
+            #theclock {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            #theclock {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -677,6 +696,13 @@
                                         <div class="elementor-widget-container">
 
                                             <section class="hero-section">
+                                                <div id="theclock" style="margin: auto; margin-bottom: 50px;">
+                                                    <a href="https://logwork.com/countdown-4hkn" class="countdown-timer"
+                                                        data-timezone="Asia/Seoul" data-textcolor="#ffffff"
+                                                        data-date="2024-08-01 14:22" data-background="#565656"
+                                                        data-digitscolor="#28e98c" data-unitscolor="#ffffff">Back to
+                                                        Cambodia</a>
+                                                </div>
 
                                                 <div class="custom-container">
                                                     <div class="hero-content content-width">
@@ -886,7 +912,8 @@
                                                                                 <h5 class="designation">
                                                                                     Les Diablerets
                                                                                 </h5>
-                                                                                <p class="designation"><span>Located in the
+                                                                                <p class="designation"><span>Located in
+                                                                                        the
                                                                                         Swiss Alps</span></p>
                                                                             </div>
                                                                         </div>
